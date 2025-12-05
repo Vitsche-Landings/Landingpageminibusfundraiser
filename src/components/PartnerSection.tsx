@@ -114,6 +114,50 @@ export function PartnerSection() {
             {t.p3}
           </p>
           
+          {/* Partner Images Slideshow - moved up here */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <ImageWithFallback
+                src={slides[currentSlide].src}
+                alt={slides[currentSlide].alt}
+                className="w-full h-[400px] object-cover transition-opacity duration-500"
+              />
+              
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft size={24} color="#3232f9" />
+              </button>
+              
+              <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
+                aria-label="Next slide"
+              >
+                <ChevronRight size={24} color="#3232f9" />
+              </button>
+            </div>
+            
+            {/* Dot Navigation */}
+            <div className="flex justify-center gap-2 mt-4">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    currentSlide === index 
+                      ? 'bg-[#3232f9] w-8' 
+                      : 'bg-[#3232f9]/30 hover:bg-[#3232f9]/50'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+          
           <div className="bg-white border-2 border-[#3232f9] p-[32px] rounded-lg">
             <h3 className="font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[24px] mb-[16px]">
               {t.workTitle}
@@ -171,50 +215,6 @@ export function PartnerSection() {
             <p className="font-['KyivType_Sans',sans-serif] text-white text-[18px] leading-[1.6] mt-[16px]">
               {t.coordinator3}
             </p>
-          </div>
-        </div>
-        
-        {/* Partner Images Slideshow */}
-        <div className="mt-[60px] relative">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
-            <ImageWithFallback
-              src={slides[currentSlide].src}
-              alt={slides[currentSlide].alt}
-              className="w-full h-[400px] object-cover transition-opacity duration-500"
-            />
-            
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
-              aria-label="Previous slide"
-            >
-              <ChevronLeft size={24} color="#3232f9" />
-            </button>
-            
-            <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
-              aria-label="Next slide"
-            >
-              <ChevronRight size={24} color="#3232f9" />
-            </button>
-          </div>
-          
-          {/* Dot Navigation */}
-          <div className="flex justify-center gap-2 mt-4">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  currentSlide === index 
-                    ? 'bg-[#3232f9] w-8' 
-                    : 'bg-[#3232f9]/30 hover:bg-[#3232f9]/50'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
           </div>
         </div>
         

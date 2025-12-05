@@ -70,16 +70,22 @@ export function Footer() {
                  className="block font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[16px] hover:underline">
                 Instagram @karstenfuhrken
               </a>
-              <a href="https://instagram.com/christoph_wendland" target="_blank" rel="noopener noreferrer"
-                 className="block font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[16px] hover:underline">
-                Instagram @christoph_wendland
-              </a>
-              <a href="https://instagram.com/nadima_nie" target="_blank" rel="noopener noreferrer"
-                 className="block font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[16px] hover:underline">
-                Instagram @nadima_nie
-              </a>
+          
             </div>
           </div>
+        </div>
+        
+        {/* Transparency Section - Full Width */}
+        <div className="mb-[40px] bg-white/50 p-[24px] rounded-lg border-2 border-[#3232f9]">
+          <h3 className="font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[20px] mb-[12px]">
+            {t.transparencyTitle}
+          </h3>
+          <p className="font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[14px] leading-[1.6] mb-[8px]">
+            {t.transparency}
+          </p>
+          <p className="font-['KyivType_Sans',sans-serif] text-[#3232f9] text-[14px] leading-[1.6]">
+            {t.nonprofit}
+          </p>
         </div>
         
         <div className="border-t-2 border-[#3232f9] pt-[24px] text-center">

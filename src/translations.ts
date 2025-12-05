@@ -10,7 +10,7 @@ export const translations = {
       bullet4: 'Unterstützung humanitärer Zentren',
       bullet5: 'Schutz für Familien, Kinder, ältere Menschen',
       highlight: 'Eine funktionierende Transportstruktur kann über Leben und Tod entscheiden.',
-      p3: 'Darum sammeln wir 20.000 €, um ein zuverlässiges Fahrzeug zu kaufen, für humanitäre Einsätze auszurüsten und nach Odesa zu überführen.',
+      p3: 'Darum sammeln wir 20.000 €, um ein funktionssicheres Fahrzeug zu kaufen, für humanitäre Einsätze auszurüsten und nach Odesa zu überführen.',
       imageAlt: 'Ukraine Karte'
     },
     en: {
@@ -56,10 +56,10 @@ export const translations = {
       item3Text: 'in Odesa',
       item4Title: 'Versorgung abgelegener Dörfer',
       item4Text: 'mit kaum noch bestehender Infrastruktur',
-      routeTitle: 'Seine Route:',
+      routeTitle: 'Die Route',
       route: 'Odesa → Mykolajiw → Cherson',
       routeText1: 'Jeden Tag. Jede Woche. Ohne Pause.',
-      routeText2: 'Er erreicht regelmäßig hunderte Menschen und schließt eine kritische Versorgungslücke.',
+      routeText2: 'Der Minibus erreicht regelmäßig hunderte Menschen und schließt eine kritische Versorgungslücke.',
       imageCaption: 'Beispiel-Fahrzeug: Mercedes Vito oder vergleichbarer Minibus',
       imageAlt: 'Humanitärer Bus'
     },
@@ -144,6 +144,9 @@ export const translations = {
       faq: 'FAQ',
       participate: 'Mitmachen',
       socialTitle: 'Social Media',
+      transparencyTitle: 'Transparenz & Verwendung der Spenden',
+      transparency: 'Für die professionelle Umsetzung und Begleitung des Projekts werden 10 % der Spendensumme für Organisations- und Administrationskosten von Vitsche e.V. verwendet.',
+      nonprofit: 'Vitsche e.V. arbeitet gemeinnützig und transparent. Alle Ausgaben werden regelmäßig dokumentiert und nachprüfbar offengelegt.',
       copyright: '© 2024 Vitsche e.V. & TMR Flüchtlingshilfe Ukraine Berlin e.V. All Rights Reserved.'
     },
     en: {
@@ -152,6 +155,9 @@ export const translations = {
       faq: 'FAQ',
       participate: 'Get Involved',
       socialTitle: 'Social Media',
+      transparencyTitle: 'Transparency & Use of Donations',
+      transparency: 'For professional implementation and project support, 10% of the donation amount is used for organizational and administrative costs by Vitsche e.V.',
+      nonprofit: 'Vitsche e.V. operates on a non-profit basis and transparently. All expenses are regularly documented and verifiably disclosed.',
       copyright: '© 2024 Vitsche e.V. & TMR Refugee Aid Ukraine Berlin e.V. All Rights Reserved.'
     }
   },
@@ -169,15 +175,15 @@ export const translations = {
         },
         {
           question: 'Wer organisiert den Kauf und die Überführung?',
-          answer: 'Karsten Fuhrken, Koordinator bei TMR Flüchtlingshilfe Ukraine Berlin e.V., kauft den Bus persönlich, lässt ihn technisch vorbereiten und fährt ihn selbst bis nach Odesa.'
+          answer: 'Karsten Fuhrken, Koordinator bei TMR Flüchtlingshilfe Ukraine Berlin e.V., kauft den Bus persönlich, lässt ihn technisch aufbereiten und fährt ihn selbst bis nach Odesa.'
         },
         {
           question: 'Wer koordiniert den Einsatz in der Ukraine?',
-          answer: 'In Odesa übernimmt Alla Ponomarchuk die tägliche Einsatzleitung, Routenplanung, Versorgung und Evakuierungen. Ihr Team arbeitet seit Beginn des Krieges auf höchster Belastungsebene für besonders gefährdete Menschen.'
+          answer: 'In Odesa übernimmt Alla Ponomarchuk die tägliche Einsatzleitung, Routenplanung, Versorgung und die Evakuierungen. Ihr Team arbeitet seit Beginn des Krieges auf höchster Belastungsebene für besonders gefährdete Menschen.'
         },
         {
           question: 'Wo wird der Bus eingesetzt?',
-          answer: 'Auf der täglichen humanitären Route: Odesa → Mykolajiw → Cherson. Eine der am stärksten betroffenen Regionen des Landes.'
+          answer: 'Auf der täglichen humanitären Route: Odesa → Mykolajiw → Cherson. In einer der am stärksten betroffenen Regionen des Landes.'
         },
         {
           question: 'Wie kommt der Bus in die Ukraine?',
@@ -189,7 +195,7 @@ export const translations = {
         },
         {
           question: 'Warum arbeitet Vitsche mit TMR zusammen?',
-          answer: 'Weil TMR seit 2022 zuverlässig, transparent und extrem wirksam arbeitet. Ihr Team besteht aus erfahrenen Logistik- und Hilfskräften, die ihre Arbeit unter schwierigen Bedingungen nachweislich leisten.'
+          answer: 'Weil TMR seit 2022 zuverlässig, transparent und extrem wirksam arbeitet. Das Team von TMR besteht aus erfahrenen Logistik- und Hilfskräften, die ihre Arbeit unter schwierigen Bedingungen nachweislich leisten.'
         },
         {
           question: 'Wird der Bus in Tarnfarben lackiert?',
@@ -198,6 +204,10 @@ export const translations = {
         {
           question: 'Warum ist dieser Bus so wichtig?',
           answer: 'Weil die humanitäre Infrastruktur im Süden der Ukraine stark zerstört ist. Ohne zuverlässige Fahrzeuge können Evakuierungen, Hilfstransporte und medizinische Notversorgung nicht stattfinden. Dieser Bus bedeutet Schutz, Versorgung – und Leben.'
+        },
+        {
+          question: 'Wie werden die Spenden verwendet?',
+          answer: 'Alle Spenden fließen direkt in den Kauf, die Ausstattung und Überführung des Minibusses. Für die professionelle Umsetzung und Begleitung des Projekts werden 10 % der Spendensumme für Organisations- und Administrationskosten von Vitsche e.V. verwendet. Vitsche e.V. arbeitet gemeinnützig und transparent. Alle Ausgaben werden regelmäßig dokumentiert und nachprüfbar offengelegt.'
         }
       ]
     },
@@ -218,11 +228,11 @@ export const translations = {
         },
         {
           question: 'Who coordinates operations in Ukraine?',
-          answer: 'In Odesa, Alla Ponomarchuk manages the daily operations, route planning, supply, and evacuations. Her team has been working at maximum capacity since the beginning of the war for particularly vulnerable people.'
+          answer: 'In Odesa, Alla Ponomarchuk manages the daily operations, route planning, supply, and the evacuations. Her team has been working at maximum capacity since the beginning of the war for particularly vulnerable people.'
         },
         {
           question: 'Where will the bus be deployed?',
-          answer: 'On the daily humanitarian route: Odesa �� Mykolaiv → Kherson. One of the most affected regions in the country.'
+          answer: 'On the daily humanitarian route: Odesa → Mykolaiv → Kherson. In one of the most affected regions in the country.'
         },
         {
           question: 'How does the bus get to Ukraine?',
@@ -243,6 +253,10 @@ export const translations = {
         {
           question: 'Why is this bus so important?',
           answer: 'Because the humanitarian infrastructure in southern Ukraine is severely destroyed. Without reliable vehicles, evacuations, aid transports, and medical emergency care cannot take place. This bus means protection, supply – and life.'
+        },
+        {
+          question: 'How are donations used?',
+          answer: 'All donations flow directly into the purchase, equipment, and transfer of the minibus. For professional implementation and project support, 10% of the donation amount is used for organizational and administrative costs by Vitsche e.V. Vitsche e.V. operates on a non-profit basis and transparently. All expenses are regularly documented and verifiably disclosed.'
         }
       ]
     }
